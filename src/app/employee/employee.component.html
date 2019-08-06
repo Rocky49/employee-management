@@ -1,0 +1,34 @@
+<div class="container align-center">
+    <div class="card align-center bg-dark">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Sign in</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Username</label>
+                <div class="col-md-4">
+                    <input id="textinput" [(ngModel)]="employee.username" type="text" placeholder="Username" class="form-control input-md">
+                    <span class="help-block">help</span>
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                <div class="col-md-4">
+                    <input id="passwordinput" [(ngModel)]="employee.password" type="password" placeholder="password" class="form-control input-md">
+                    <span class="help-block">help</span>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" type="button" (click)="onSubmit()" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
